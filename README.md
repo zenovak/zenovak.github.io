@@ -1,3 +1,12 @@
+# Running this note for the first time:
+
+1. Install Ruby from [here](https://rubyinstaller.org/downloads/), choose Ruby + Devkit
+2. run `ridk install` in cmd, pick option 3 that says: `MSYS2 and MINGW development tool chain`
+3. Then install the jerkyll bundle `gem install jekyll bundler`
+4. Clone this repo, and run `bundle`
+5. Start server via `bundle exec jekyll s`
+
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;

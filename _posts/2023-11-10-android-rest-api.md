@@ -76,7 +76,6 @@ public class Example {
     private Integer user_id;
     
     private Integer[] user_friends;
-    ...
 }
 ```
 
@@ -96,52 +95,49 @@ GSON is a google library that will perform the Java objects to JSON representati
 Using JSONpojo, we get the following Gson representation of our class:
 
 ```java
-package com.example;  
-  
-import java.util.List;  
-import javax.annotation.Generated;  
-import com.google.gson.annotations.Expose;  
-import com.google.gson.annotations.SerializedName;  
+import java.util.List;  
+import javax.annotation.Generated;  
+import com.google.gson.annotations.Expose;  
+import com.google.gson.annotations.SerializedName;  
   
 @Generated("jsonschema2pojo")  
-public class Example {  
+public class Example {  
   
     @SerializedName("user_name")  
     @Expose  
-    private String userName;
+    private String userName;
 
     @SerializedName("user_id")  
     @Expose  
-    private Integer userId;  
+    private Integer userId;  
     
     @SerializedName("user_friends")  
     @Expose  
-    private List<Integer> userFriends;  
+    private List<Integer> userFriends;  
     
-    public String getUserName() {  
-    return userName;  
+    public String getUserName() {  
+    return userName;  
     }  
     
-    public void setUserName(String userName) {  
-    this.userName = userName;  
+    public void setUserName(String userName) {  
+    this.userName = userName;  
     }  
     
-    public Integer getUserId() {  
-    return userId;  
+    public Integer getUserId() {  
+    return userId;  
     }  
     
-    public void setUserId(Integer userId) {  
-    this.userId = userId;  
+    public void setUserId(Integer userId) {  
+    this.userId = userId;  
     }  
     
-    public List<Integer> getUserFriends() {  
-    return userFriends;  
+    public List<Integer> getUserFriends() {  
+    return userFriends;  
     }  
     
-    public void setUserFriends(List<Integer> userFriends) {  
-    this.userFriends = userFriends;  
+    public void setUserFriends(List<Integer> userFriends) {  
+    this.userFriends = userFriends;  
     }  
-  
 }
 ```
 
@@ -185,7 +181,7 @@ public interface GetUserDataService {
 
 `Call<T>` class from retrofit represents the HTTP request object. The `T` generic here represents the expected response body. 
 
-`@GET` annotation indicates that this request is a GET request, and the `"user"` part is the endpoint.
+`@GET` annotation indicates that this request is a GET request, and the `"user"` part is the endpoint.
 
 The requests payload is modelled as part of the interface's params. Here's another example:
 ```java
@@ -222,7 +218,7 @@ public interface ApiService {
 
 The model request body class will be parsed and converted also via `GSON` into a JSON payload. So `GSON` synthaxes do apply :
 ```java
-import com.google.gson.annotations.SerializedName;  
+import com.google.gson.annotations.SerializedName;  
 
 
 public class EnedisRequest { 
@@ -279,9 +275,9 @@ public interface SendOfferService {
 }
 ```
 
-`{id_number}` is a placeholder for the actual ID number variable path
+`{id_number}` is a placeholder for the actual ID number variable path
 
-`@Path("id_number")` annotation binds the `idNumber` method params to the `{id_number}` placeholder in the URL.
+`@Path("id_number")` annotation binds the `idNumber` method params to the `{id_number}` placeholder in the URL.
 
 <br><br>
 
@@ -413,7 +409,6 @@ Then declare this file inside manifest:
 .
 .
 <application
-    ...
     android:networkSecurityConfig="@xml/network_security_config" >
     .
     .
