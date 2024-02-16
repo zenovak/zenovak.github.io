@@ -94,6 +94,7 @@ Use them [here](https://www.jsonschema2pojo.org/). Set output to java class and 
 GSON is a google library that will perform the Java objects to JSON representation conversion. As much as we could say all we needed to do was parse a string. Gson handles that mess for us and provides a handy `toJson()` and `fromJson()` methods.
 
 Using JSONpojo, we get the following Gson representation of our class:
+
 ```java
 package com.example;  
   
@@ -105,39 +106,41 @@ import com.google.gson.annotations.SerializedName;
 @Generated("jsonschema2pojo")  
 public class Example {  
   
-@SerializedName("user_name")  
-@Expose  
-private String userName;  
-@SerializedName("user_id")  
-@Expose  
-private Integer userId;  
-@SerializedName("user_friends")  
-@Expose  
-private List<Integer> userFriends;  
-  
-public String getUserName() {  
-return userName;  
-}  
-  
-public void setUserName(String userName) {  
-this.userName = userName;  
-}  
-  
-public Integer getUserId() {  
-return userId;  
-}  
-  
-public void setUserId(Integer userId) {  
-this.userId = userId;  
-}  
-  
-public List<Integer> getUserFriends() {  
-return userFriends;  
-}  
-  
-public void setUserFriends(List<Integer> userFriends) {  
-this.userFriends = userFriends;  
-}  
+    @SerializedName("user_name")  
+    @Expose  
+    private String userName;
+
+    @SerializedName("user_id")  
+    @Expose  
+    private Integer userId;  
+    
+    @SerializedName("user_friends")  
+    @Expose  
+    private List<Integer> userFriends;  
+    
+    public String getUserName() {  
+    return userName;  
+    }  
+    
+    public void setUserName(String userName) {  
+    this.userName = userName;  
+    }  
+    
+    public Integer getUserId() {  
+    return userId;  
+    }  
+    
+    public void setUserId(Integer userId) {  
+    this.userId = userId;  
+    }  
+    
+    public List<Integer> getUserFriends() {  
+    return userFriends;  
+    }  
+    
+    public void setUserFriends(List<Integer> userFriends) {  
+    this.userFriends = userFriends;  
+    }  
   
 }
 ```
@@ -223,31 +226,30 @@ import com.google.gson.annotations.SerializedName;
 
 
 public class EnedisRequest { 
-    @SerializedField("year")
+    @SerializedName("year")
     private String year; 
     
-    @SerializedField("month")
+    @SerializedName("month")
     private String month; 
     
-    @SerializedField("line")
+    @SerializedName("line")
     private String line; 
     
-    @SerializedField("plot_type")
+    @SerializedName("plot_type")
     private String plotType; 
     
-    @SerializedField("unit")
+    @SerializedName("unit")
     private String unit; 
     
-    // getters and setters
-    ...
+    // getters and setters...
 }
 ```
 
 As we can see, if an API endpoint expects a JSON payload, then we must prepare a model class. It gets more complicated when we have nested JSON parameters such as a list of elements or another object. These expectations must be met with a request/response model class equivalent.
 ```json
 {
-    user_id: "123",
-    friends: ["John", "Link"]
+    "user_id": "123",
+    "friends": ["John", "Link"]
 }
 ```
 
