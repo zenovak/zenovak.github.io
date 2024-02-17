@@ -41,7 +41,7 @@ You will of course need to handle the permission requests inside your applicatio
 ---
 ## Using Retrofit
 
-There are 3 components you need to facilitate an effective commuinication:
+There are 3 components you need to facilitate an effective communication:
 - Retrofit Instance
 - Interface
 - Model class
@@ -52,7 +52,7 @@ To send a GET requests to a HTTP server, we need to define 2 important component
 - The request `interface`
 - The response `model` class
 
-The request interface would act as an async template of our request payload, while the model class would "model" the expected response data.
+The request interface represents our API method calls and it's query parameters, while the model class would "model" the expected response data.
 
 <br>
 
