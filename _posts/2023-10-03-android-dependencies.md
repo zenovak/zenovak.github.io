@@ -157,8 +157,8 @@ As previously mentioned, we can have gradle to download this files automatically
 So lets copy this code from the readme page:
 ```gradle
 repositories {
-  google()
-  mavenCentral()
+    google()
+    mavenCentral()
 }
 
 dependencies {
