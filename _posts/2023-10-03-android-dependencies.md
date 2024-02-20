@@ -157,12 +157,21 @@ As previously mentioned, we can have gradle to download this files automatically
 So lets copy this code from the readme page:
 ```gradle
 repositories {
+<<<<<<< HEAD
     google()
     mavenCentral()
 }
 
 dependencies {
     implementation 'com.github.bumptech.glide:glide:4.16.0'
+=======
+  google()
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'com.github.bumptech.glide:glide:4.16.0'
+>>>>>>> 5710cc5df95aad49a9e1b866bd2992ca4006e972
 }
 ```
 
