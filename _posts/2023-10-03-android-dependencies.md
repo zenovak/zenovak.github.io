@@ -1,7 +1,7 @@
 ---
 title: Android - Library, Dependencies and Gradle.
 date: 2023-10-03
-categories: [Android, Fundamentals]
+categories: [Android, AndroidFundamentals]
 tags: [java, android]
 ---
 
