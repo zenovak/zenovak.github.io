@@ -1,7 +1,6 @@
 ---
 title: NGINX - 2 Configurations for SSL
-
-date: YYYY-MM-DD HH:MM:SS +/-TTTT #TTTT Means timezone
+date: 2024-01-04
 categories: [Web, Nginx]
 tags: [web, nginx, http, https, ssl]     # TAG names should always be lowercase
 ---
