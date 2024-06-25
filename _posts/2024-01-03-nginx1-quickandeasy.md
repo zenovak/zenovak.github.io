@@ -1,5 +1,5 @@
 ---
-title: Nginx - 1 Quick and easy setup for webhosting on VPS
+title: NGINX - 1 Quick and easy setup for webhosting on VPS
 date: 2024-01-03 
 categories: [Web, Nginx]
 tags: [web, nginx]     # TAG names should always be lowercase

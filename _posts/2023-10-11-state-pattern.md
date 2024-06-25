@@ -1,7 +1,7 @@
 ---
 title: DP - 2 State Pattern
 date: 2023-10-11
-categories: [DesignPatterns, DesignPatternFundamentals]
+categories: [DesignPatterns, DesignPatternsFundamentals]
 tags: [dp, java]     # TAG names should always be lowercase
 ---
 
