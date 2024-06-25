@@ -114,7 +114,7 @@ To build maintainable software we should design our classes to have single respo
 1. State management
 2. Providing features for the editor
 
-```uml
+```
  __________________                           ____________________
 |      Editor      |                         |     EditorState    |
 |------------------|        Composition      |--------------------|
@@ -154,7 +154,7 @@ We need to take all these state management and put it outside. Our editor should
 
 With this implementation we now see that our `editor` class would still have a relationship on the `EditorState` class. It is a dependency pattern now. We do not store the states but we would use the state to initialize our editor. 
 
-```uml
+```
  __________________                           ____________________
 |      Editor      |                         |     EditorState    |
 |------------------|       Dependency        |--------------------|
