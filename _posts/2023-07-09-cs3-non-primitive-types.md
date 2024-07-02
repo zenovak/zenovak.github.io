@@ -1,5 +1,5 @@
 ---
-title: CS - 3 Logical Operators
+title: CS - 3 Non-primitive Types
 date: 2023-07-09 #TTTT Means timezone
 categories: [C#, C#Fundamentals]
 tags: [c#]     # TAG names should always be lowercase
