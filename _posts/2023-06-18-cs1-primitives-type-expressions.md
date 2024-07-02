@@ -245,11 +245,11 @@ int b = 10;
 
 int c =5;
 
-(float)b / (float)a                 // Casting the int into type float
+(float)b / (float)a // Casting the int into type float
 ```
 
 
 Mathematical operators in c# follows regular math rules. PEMDAS.
 ```cs
-a + b * c;                           // 53
+a + b * c; // 53
 ```
