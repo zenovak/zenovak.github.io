@@ -1,7 +1,7 @@
 ---
 title: CS - 2 Logical Operators
 date: 2023-05-10 #TTTT Means timezone
-categories: [C#, C#Fundamentals]
+categories: [C#, C#I-Fundamentals]
 tags: [c#]     # TAG names should always be lowercase
 ---
 

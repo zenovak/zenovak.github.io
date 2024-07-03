@@ -1,7 +1,7 @@
 ---
 title: CS - 3 Non-primitive Types
 date: 2023-07-09 #TTTT Means timezone
-categories: [C#, C#Fundamentals]
+categories: [C#, C#I-Fundamentals]
 tags: [c#]     # TAG names should always be lowercase
 ---
 
