@@ -6,7 +6,7 @@ tags: [web, nginx]     # TAG names should always be lowercase
 ---
 
 
-# About
+## About
 NGINX is a reverse proxy server which allows you to forward an application on localhost be able to be accessed by an external IP with added support for commonly needed protocols like http2 or SSL.
 
 To put it simply, if you have a nextjs or python flask application on a virtual private server like google cloud or digital ocean and you launch your app. It is accessible on localhost, but when you go to your app IP address nothing happens. NGINX fixes that.
@@ -21,7 +21,7 @@ Once installed. You should run your web applications on another screen before ha
 <br><br>
 
 ---
-# Configuration basics
+## Configuration basics
 
 Once installed, its time to configure the nginx settings. Go inside the settings file via nano:
 ```
@@ -155,7 +155,7 @@ That's it, save and exit nano.
 
 <br>
 
-## Getting changes into effect
+### Getting changes into effect
 First we need to run a synthax check to see if we did any mistakes in the configuration file:
 ```
 sudo nginx -t
@@ -178,13 +178,13 @@ That's it. Run your application on localhost and you should see the site on your
 <br><br>
 
 ---
-# Start, Stop, and Restart Nginx with systemctl
+## Start, Stop, and Restart Nginx with systemctl
 
 > [manual](https://phoenixnap.com/kb/nginx-start-stop-restart)
 
 About the restart command we did previously...
 
-## Graceful restart (reload)
+### Graceful restart (reload)
 If you’re refreshing Nginx after changing the configuration, it’s best to gracefully reload the service. That shuts down old processes and restarts new ones with the new configuration.
 ```
 sudo systemctl reload nginx
@@ -192,7 +192,7 @@ sudo systemctl reload nginx
 
 <br>
 
-## Forceful restart
+### Forceful restart
 For major configuration changes, you can force a full restart of Nginx. This force-closes the whole service and sub-processes, and restarts the whole package.
 
 ```
@@ -201,7 +201,7 @@ sudo systemctl restart nginx
 
 <br>
 
-## Restart vs Reload Nginx
+### Restart vs Reload Nginx
 The **`reload`** command keeps the Nginx server running as it reloads updated configuration files. If Nginx notices a syntax error in any of the configuration files, the reload is aborted and the server keeps running based on old config files. **Reloading is safer than restarting Nginx.**
 
 The **`restart`** command will shut down the server including all related services and power it on again. Restart Nginx only when making significant configuration updates, such as changing ports or interfaces. This command will force shut down all worker processes.
