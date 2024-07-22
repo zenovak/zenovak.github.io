@@ -80,10 +80,10 @@ SSL requires the following components:
 Luckily we do not need to get the certificate and configure nginx ourself, and we can use certbot for this. [Reference](https://medium.com/@bjnandi/how-to-install-free-ssl-tls-certificate-on-nginx-web-server-in-ubuntu-22-04-lts-ef3d751de166), [2](https://certbot.eff.org/instructions?ws=nginx&os=debianbuster)
 
 
-> [!INFO] Dependency
+> **Dependency**\
 > Certbot uses the snap command to install. Besure snap is installed. Get it from here:
 > https://snapcraft.io/docs/installing-snap-on-debian
-
+{: .prompt-info}
 
 ```
 sudo apt-get remove certbot
@@ -173,8 +173,9 @@ y+hTSi8wniL5ukxu8up60o4=
 ```
 
 
-> [!INFO] I did not get a `.pem`
+> **I did not get a `.pem`**\
 > Some SSL generators will create bundle files instead of `.pem` this is normal as SSL certificates are consists of a primary and intermediate files (crt) you will have to concatonate them. Read more [here](https://www.digicert.com/kb/csr-ssl-installation/nginx-openssl.htm)
+{: .prompt-info}
 
 <br>
 
@@ -225,7 +226,7 @@ sudo systemctl restart nginx
 <br><br>
 
 ---
-# Hiding IP Addresses and enforce domain name
+## Hiding IP Addresses and enforce domain name
 
 
 ### [SSL Security concerns](https://askubuntu.com/questions/1151042/only-allow-access-to-nginx-server-when-using-the-full-domain-name-and-not-the-ip)
