@@ -1,7 +1,7 @@
 ---
 title: CS - 2 Inheritance
 date: 2023-10-01 #TTTT Means timezone
-categories: [C#, C#II-Intermediate]
+categories: [C#, C# II - Intermediate]
 tags: [c#]     # TAG names should always be lowercase
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: CS - 1 Primitive Types and Expressions
 date: 2023-06-18 #TTTT Means timezone
-categories: [C#, C#I-Fundamentals]
+categories: [C#, C# I - Fundamentals]
 tags: [c#]     # TAG names should always be lowercase
 ---
 

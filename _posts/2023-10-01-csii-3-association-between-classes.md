@@ -1,7 +1,7 @@
 ---
 title: CS - 3 Association Between Classes
 date: 2023-10-01 #TTTT Means timezone
-categories: [C#, C#II-Intermediate]
+categories: [C#, C# II - Intermediate]
 tags: [c#]     # TAG names should always be lowercase
 ---
 

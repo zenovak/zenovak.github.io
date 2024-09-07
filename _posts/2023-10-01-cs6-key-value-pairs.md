@@ -1,7 +1,7 @@
 ---
 title: CS - 6 Key Value Pairs
 date: 2023-10-01 #TTTT Means timezone
-categories: [C#, C#I-Fundamentals]
+categories: [C#, C# I - Fundamentals]
 tags: [c#]     # TAG names should always be lowercase
 ---
 

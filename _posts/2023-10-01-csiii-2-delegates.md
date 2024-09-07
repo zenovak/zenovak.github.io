@@ -1,7 +1,7 @@
 ---
 title: CS - 2 Delegates
 date: 2023-10-01 #TTTT Means timezone
-categories: [C#, C#III-Advanced]
+categories: [C#, C# III - Advanced]
 tags: [c#]     # TAG names should always be lowercase
 ---
 

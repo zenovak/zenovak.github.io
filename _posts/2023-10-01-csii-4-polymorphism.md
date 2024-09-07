@@ -1,7 +1,7 @@
 ---
 title: CS - 4 Polymorphism
 date: 2023-10-01 #TTTT Means timezone
-categories: [C#, C#II-Intermediate]
+categories: [C#, C# II - Intermediate]
 tags: [c#]     # TAG names should always be lowercase
 ---
 
